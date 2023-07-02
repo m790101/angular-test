@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FakeServiceService } from '../fake-service.service';
+import { FakeServiceService } from '../../fake-service.service';
 
 @Component({
   selector: 'app-count',

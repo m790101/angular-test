@@ -1,9 +1,8 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { CountComponent } from './count/count.component';
 
 const routes: Routes = [
-  { path: 'count', component: CountComponent },
+  { path: 'book', loadChildren: () => import('./book/book.module').then(m => m.BookModule)},
 ];
 
 @NgModule({
